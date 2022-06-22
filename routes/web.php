@@ -20,7 +20,7 @@ Route::get('/', function () {
         "title" => "Hello Laravel"
     ];
     return view('home', $dataHome);
-});
+})->name('home');
 
 Route::get('/about', function () {
     $dataHome = [
@@ -28,7 +28,7 @@ Route::get('/about', function () {
         "title" => "About laravel"
     ];
     return view('home', $dataHome);
-});
+})->name('about');
 
 Route::get('/contact', function () {
     $dataHome = [
@@ -36,5 +36,5 @@ Route::get('/contact', function () {
         "title" => "Contact"
     ];
     return view('home', $dataHome);
-});
+})->name('contact');
 
