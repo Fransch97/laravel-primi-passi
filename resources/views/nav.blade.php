@@ -1,11 +1,19 @@
 <ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link a-sc" aria-current="page" href="/">{{$nav[0]}}</a>
+
+
+
+
+
+     <li class="nav-item">
+      <a class="nav-link a-sc" href="/">{{$nav['home']}}</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link a-sc" href="about">{{$nav[1]}}</a>
+      <a class="nav-link a-sc" href="{{route('about')}}">{{$nav['about']}}</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link a-sc" href="contact">{{$nav[2]}}</a>
-    </li>
+      <a class="nav-link a-sc" href="{{route('contact')}}">{{$nav['contact']}}</a>
+
+
+
+
 </ul>

@@ -15,8 +15,6 @@
     <div class="app">
         @include('nav')
 
-
-
         <h1>{{$title}}</h1>
 
     </div>

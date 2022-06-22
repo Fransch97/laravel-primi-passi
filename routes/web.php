@@ -16,25 +16,25 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $dataHome = [
-        'nav' => ['home', 'about laravel', 'contact'],
+        'nav' => [ 'home'=>'home', 'about'=>'about laravel', 'contact'=>'contact'],
         "title" => "Hello Laravel"
     ];
     return view('home', $dataHome);
 })->name('home');
 
 Route::get('/about', function () {
-    $dataHome = [
-        'nav' => ['home', 'about laravel', 'contact'],
+    $dataAbout = [
+        'nav' => [ 'home'=>'home', 'about'=>'about laravel', 'contact'=>'contact'],
         "title" => "About laravel"
     ];
-    return view('home', $dataHome);
+    return view('about', $dataAbout);
 })->name('about');
 
 Route::get('/contact', function () {
-    $dataHome = [
-        'nav' => ['home', 'about laravel', 'contact'],
+    $dataContact = [
+        'nav' => [ 'home'=>'home', 'about'=>'about laravel', 'contact'=>'contact'],
         "title" => "Contact"
     ];
-    return view('home', $dataHome);
+    return view('contact', $dataContact);
 })->name('contact');
 
