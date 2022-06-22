@@ -13,6 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('home');
+    $dataHome = [
+        'nav' => ['home', 'about laravel', 'contact'],
+        "title" => "Hello Laravel"
+    ];
+    return view('home', $dataHome);
 });
+
+Route::get('/about', function () {
+    $dataHome = [
+        'nav' => ['home', 'about laravel', 'contact'],
+        "title" => "About laravel"
+    ];
+    return view('home', $dataHome);
+});
+
+Route::get('/contact', function () {
+    $dataHome = [
+        'nav' => ['home', 'about laravel', 'contact'],
+        "title" => "Contact"
+    ];
+    return view('home', $dataHome);
+});
+

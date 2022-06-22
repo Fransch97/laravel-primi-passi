@@ -9,7 +9,7 @@
     <!-- END BOOTTRAP -->
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
 
-    <title>Welcome</title>
+    <title>About</title>
 </head>
 <body>
     <div class="app">

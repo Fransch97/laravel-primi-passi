@@ -3,6 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+ul{
+    background-color: black;
+}
+
 body{
-    background-color: red;
+    background-image: url(../img/pexels-anna-shvets-3683056.jpg);
+    background-size: cover;
+}
+
+li a.a-sc{
+    text-transform: capitalize;
+    color: white;
+    padding: 20px;
+}
+
+.app{
+    background-color: rgba(0, 0, 0, 0.093);
+    min-height: 100vh;
+    position: relative;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f9322c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 7rem;
 }
